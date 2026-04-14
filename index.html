@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ANBESABET | Best P2P Casino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <button id="menuBtn" class="menu-btn" aria-label="Open menu">≡</button>
+        <div class="brand">ANBESA<span>BET</span></div>
+        <div class="balance-cluster">
+            <div class="currency">
+                ETB <span class="dropdown">▾</span>
+            </div>
+            <div class="balance">0.00</div>
+        </div>
+        <button id="myBtn" class="btn-deposit">Deposit</button>
+        <div class="profile-actions">
+            <button class="icon-btn" aria-label="Notifications">🔔</button>
+            <button class="icon-btn profile" aria-label="Profile">👤</button>
+        </div>
+    </header>
+
+    <div class="mobile-drawer-overlay" id="drawerOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <button class="drawer-close" id="drawerClose" aria-label="Close menu">×</button>
+        <nav class="drawer-menu">
+            <a href="#">🏠 Home</a>
+            <a href="#">💣 Mines</a>
+            <a href="#">🐔 Chicken</a>
+            <a href="#">🚀 Aviator</a>
+            <a href="#">🎰 Casino</a>
+            <a href="#">🎁 Promotions</a>
+        </nav>
+    </div>
+
+    <nav class="subnav">
+        <a href="#" class="nav-item active">🏠 Home</a>
+        <a href="#" class="nav-item">🎰 Casino</a>
+        <a href="#" class="nav-item">📡 Live Games</a>
+        <a href="#" class="nav-item">🎁 Promotions</a>
+    </nav>
+
+    <main class="content-area">
+        <section class="hero-banner">
+            <div class="hero-slider">
+                <article class="hero-slide">
+                    <div class="hero-copy">
+                        <span class="hero-tag">Weekly Cashback 30%</span>
+                        <h1>Deposit Now & Win Big!</h1>
+                        <p>Play Aviator, Mines, Chicken and earn instant rewards with every bet.</p>
+                        <button class="telegram-btn">Play Now</button>
+                    </div>
+                    <div class="hero-visual">
+                        <img src="images/aviator.png" alt="Aviator" />
+                        <div class="hero-overlay">New Game</div>
+                    </div>
+                </article>
+                <article class="hero-slide hero-slide-alt">
+                    <div class="hero-copy">
+                        <span class="hero-tag">Big Win Boost</span>
+                        <h1>Spin, Bet & Cash Out Fast</h1>
+                        <p>Unlock daily rewards, extra bonuses, and fast payout action in every game.</p>
+                        <button class="telegram-btn">Deposit Now</button>
+                    </div>
+                    <div class="hero-visual">
+                        <img src="images/aviator.png" alt="Jackpot" />
+                        <div class="hero-overlay">Hot</div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="games-showcase">
+            <div class="section-header">
+                <div>
+                    <h2>ANBESABET Originals</h2>
+                    <p>Top games selected for you</p>
+                </div>
+                <a href="#" class="view-all">All Games &gt;</a>
+            </div>
+
+            <div class="card-container">
+                <div class="game-card">
+                    <img src="images/mines.png" class="card-image" alt="Mines">
+                    <div class="card-meta">
+                        <span>Mines</span>
+                        <button class="play-overlay">Play</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="images/chicken.png" class="card-image" alt="Chicken">
+                    <div class="card-meta">
+                        <span>Chicken</span>
+                        <button class="play-overlay">Play</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="images/keno.png" class="card-image" alt="Keno">
+                    <div class="card-meta">
+                        <span>Keno</span>
+                        <button class="play-overlay">Play</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="images/aviator.png" class="card-image" alt="Aviator">
+                    <div class="card-meta">
+                        <span>Aviator</span>
+                        <button class="play-overlay">Play</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="bottom-nav">
+        <a href="#" class="nav-action">☰<span>Menu</span></a>
+        <a href="#" class="nav-action active">🏠<span>Home</span></a>
+        <a href="#" class="nav-action">🎰<span>Casino</span></a>
+        <a href="#" class="nav-action">💰<span>Bonuses</span></a>
+        <a href="#" class="nav-action">⚽<span>Sports</span></a>
+    </div>
+
+<div id="minesModal" class="modal">
+    <div class="modal-content game-modal">
+        <span class="close-game">&times;</span>
+        <h2 style="color:#00ff41; margin-bottom: 15px;">MINES</h2>
+
+        <div class="game-layout">
+            <div class="game-header">
+                <div id="multiplier">Multiplier: 1.00x</div>
+                <div id="resultText">Click a tile to start.</div>
+            </div>
+
+            <div class="mines-grid" id="grid"></div>
+
+            <div class="game-controls">
+                <label>Bet Amount</label>
+                <input type="number" id="betAmount" value="10" step="10" min="1">
+                <button id="startGame" class="telegram-btn">Start</button>
+                <button id="cashOut" class="telegram-btn" disabled>Cash Out</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>P2P DEPOSIT</h2>
+            <div class="p2p-info">
+                <p>1. Transfer to Telebirr Account: <b>+251 9852 544 28 </b></p>
+                <p>2. Send screenshot to Admin.</p>
+                <a href="https://t.me/yourtelegram" class="telegram-btn">Send to Telegram</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Deposit Modal Logic
+        var depositModal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            depositModal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            depositModal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == depositModal) {
+                depositModal.style.display = "none";
+            }
+            if (event.target == minesModal) {
+                minesModal.style.display = "none";
+                gameActive = false;
+            }
+        }
+
+        // Mines Game Logic
+        var minesModal = document.getElementById("minesModal");
+        var minesCard = document.querySelector('.game-card:first-child');
+        var closeGame = document.getElementsByClassName('close-game')[0];
+        var startGameBtn = document.getElementById('startGame');
+        var cashOutBtn = document.getElementById('cashOut');
+        var multiplierDisplay = document.getElementById('multiplier');
+        var resultText = document.getElementById('resultText');
+        var betAmountInput = document.getElementById('betAmount');
+        var currentGrid = document.getElementById('grid');
+
+        var minePositions = [];
+        var gemsFound = 0;
+        var gameActive = false;
+        var mineCount = 3;
+        var multiplierTable = [1.00, 1.13, 1.29, 1.39, 1.52, 1.65, 1.78, 1.98];
+
+        function getMultiplier(gems) {
+            return multiplierTable[Math.min(gems, multiplierTable.length - 1)];
+        }
+
+        function updateUI() {
+            var multiplier = getMultiplier(gemsFound);
+            multiplierDisplay.textContent = 'Multiplier: ' + multiplier.toFixed(2) + 'x';
+            cashOutBtn.disabled = !gameActive || gemsFound === 0;
+        }
+
+        function createMinePositions() {
+            var mines = [];
+            while (mines.length < mineCount) {
+                var r = Math.floor(Math.random() * 25);
+                if (!mines.includes(r)) {
+                    mines.push(r);
+                }
+            }
+            return mines;
+        }
+
+        function renderBoard() {
+            currentGrid.innerHTML = '';
+            for (var i = 0; i < 25; i++) {
+                var tile = document.createElement('div');
+                tile.className = 'tile';
+                tile.dataset.index = i;
+                tile.onclick = handleTileClick;
+                currentGrid.appendChild(tile);
+            }
+        }
+
+        function handleTileClick(event) {
+            if (!gameActive) return;
+            var tile = event.currentTarget;
+            var index = Number(tile.dataset.index);
+            if (tile.style.pointerEvents === 'none') return;
+
+            if (minePositions.includes(index)) {
+                tile.classList.add('revealed-mine');
+                tile.style.pointerEvents = 'none';
+                revealMines();
+                endGame(false);
+                return;
+            }
+
+            tile.classList.add('revealed-gems');
+            tile.style.pointerEvents = 'none';
+            gemsFound += 1;
+            updateUI();
+        }
+
+        function revealMines() {
+            var tiles = currentGrid.children;
+            for (var i = 0; i < tiles.length; i++) {
+                if (minePositions.includes(i)) {
+                    tiles[i].classList.add('revealed-mine');
+                }
+                tiles[i].style.pointerEvents = 'none';
+            }
+        }
+
+        function endGame(won) {
+            gameActive = false;
+            var multiplier = getMultiplier(gemsFound);
+            var bet = Number(betAmountInput.value) || 10;
+            if (won) {
+                var payout = bet * multiplier;
+                resultText.textContent = 'Cashed out ' + payout.toFixed(2) + ' Birr @ ' + multiplier.toFixed(2) + 'x';
+            } else {
+                resultText.textContent = 'You hit a mine! Final: ' + multiplier.toFixed(2) + 'x';
+            }
+            cashOutBtn.disabled = true;
+            setTimeout(initGame, 1000);
+        }
+
+        function initGame() {
+            minePositions = createMinePositions();
+            gemsFound = 0;
+            gameActive = true;
+            resultText.textContent = 'Find gems or cash out before a mine hits.';
+            renderBoard();
+            updateUI();
+        }
+
+        minesCard.onclick = function() {
+            minesModal.style.display = 'block';
+            initGame();
+        };
+
+        closeGame.onclick = function() {
+            minesModal.style.display = 'none';
+            gameActive = false;
+        };
+
+        startGameBtn.onclick = function() {
+            initGame();
+        };
+
+        cashOutBtn.onclick = function() {
+            if (!gameActive || gemsFound === 0) return;
+            revealMines();
+            endGame(true);
+        };
+    </script>
+
